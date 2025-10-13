@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@keyframes move-right {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+.animate-move-right {
+  animation: move-right 0.8s infinite;
+}
+
+#right::-webkit-scrollbar{
+  display: none;
+}
